@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in {0..39}
+do
+   qsub -l h_rt=02:30:00 virtual_free=4G ./scriptone $i
+done
